@@ -44,6 +44,8 @@ log_formatter = os.getenv('KIRIN_LOG_FORMATTER', 'default')  # can be 'default' 
 
 log_extras = json.loads(os.getenv('KIRIN_LOG_EXTRAS', '{}')) # fields to add to the logger
 
+log_extras.update({'component': 'kirin'})
+
 #Log Level available
 # - DEBUG
 # - INFO
